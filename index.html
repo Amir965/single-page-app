@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/style.css" />
+    <script>
+      // JavaScript function to show/hide tab content and mark active tab
+      function showTab(tabId) {
+        const tabs = document.querySelectorAll(".tab-content");
+        tabs.forEach((tab) => tab.classList.remove("active"));
+
+        const tabButtons = document.querySelectorAll(".tab-button");
+        tabButtons.forEach((button) => button.classList.remove("active"));
+
+        const selectedTab = document.getElementById(tabId);
+        selectedTab.classList.add("active");
+
+        const selectedButton = document.querySelector(
+          `[onclick="showTab('${tabId}')"]`
+        );
+        selectedButton.classList.add("active");
+      }
+    </script>
+  </head>
+  <body>
+    <div class="header">
+      <div class="header-container">
+        <div class="header-content-1" style="padding: 10px 0px">
+          <span>S.C.O:330, 2nd floor, Sector 25, Punchkola Haryana 134039</span>
+        </div>
+        <div class="header-content-2">
+          <span>7383232322 &nbsp; &nbsp;|</span>
+          <span>42works@.net</span>
+          <span style="background: white">
+            <button
+              style="
+                outline: none;
+                border: none;
+                padding: 0px 10px;
+                background: white;
+              "
+            >
+              User Login
+            </button>
+          </span>
+        </div>
+      </div>
+    </div>
+    <div class="navbar">
+      <div class="nav-container">
+        <div class="nav-content">
+          <img
+            src="/assets/Images/logo.png"
+            alt="logo"
+            style="width: 100px; height: 50px"
+          />
+        </div>
+        <div class="nav-content">
+          <div class="tab-container">
+            <div class="tab-button" onclick="showTab('tab1')">Home</div>
+            <div class="tab-button" onclick="showTab('tab2')">About us</div>
+            <div class="tab-button" onclick="showTab('tab3')">Product</div>
+            <div class="tab-button" onclick="showTab('tab4')">Market Data</div>
+            <div class="tab-button" onclick="showTab('tab5')">Membership</div>
+            <div class="tab-button" onclick="showTab('tab6')">
+              Related Links
+            </div>
+            <div class="tab-button" onclick="showTab('tab7')">FAQs</div>
+            <div class="tab-button" onclick="showTab('tab8')">Career</div>
+            <div class="tab-button" onclick="showTab('tab9')">Contact Us</div>
+          </div>
+
+          <div class="tab-content" id="tab1" style="display: none"></div>
+          <div class="tab-content" id="tab2" style="display: none"></div>
+          <div class="tab-content" id="tab3" style="display: none"></div>
+          <div class="tab-content" id="tab4" style="display: none"></div>
+          <div class="tab-content" id="tab5" style="display: none"></div>
+          <div class="tab-content" id="tab6" style="display: none"></div>
+          <div class="tab-content" id="tab7" style="display: none"></div>
+          <div class="tab-content" id="tab8" style="display: none"></div>
+          <div class="tab-content" id="tab9" style="display: none"></div>
+        </div>
+      </div>
+    </div>
+    <div class="body-container">
+      <img src="/assets/Images/1.jpg" alt="headerr-logo" />
+      <div class="body-container-tag">
+        <div style="display: flex; justify-content: center">
+          <span>Saini Power Transactor</span>
+        </div>
+        <div style="display: flex; justify-content: center">
+          <p style="padding-right: 45px">EXEMPLARY POWER SOLUTIONS</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="body-content">
+      <div class="body-content-1">
+        <span>Welcome to</span>
+        <h3>Saini Power Transactor</h3>
+        <br />
+        <p>
+          "Saini POWER TRANSACTOR" is a Professional Member of India Energy
+          Exchange which is india's premier Power trading platform.Saini power
+          Transactor is a part of Saini Group which includes.Saini Orchids
+          Pvt.Ltd. (Panchkula) & Robust industries Pvt Ltd.Saimi Power
+          Transactor was established on 10.20.2010 and is headed by Mrs Saroj
+          Bala Saini.
+        </p>
+        <br />
+        <p style="font-weight: 700">
+          Mrs Saroj Bala Saini is also a Director in Robust industries Private
+          Limited and Saini Orchids Private Limited.
+        </p>
+        <br />
+        <button>Read More</button>
+      </div>
+      <div class="body-content-2">
+        <img src="/assets/Images/2.png" alt="building-image" />
+      </div>
+    </div>
+    <div class="body-footer">
+      <div class="body-footer-container">
+        <div class="body-footer-content">
+          <div class="body-footer-content-1" id="body-footer-logo">
+            <img src="/assets/Images/3.png" alt="logo1" />
+            <div class="logo-div-background"></div>
+            <div class="body-footer-contents">
+              <span style="font-weight: 600">Mission</span>
+              <p style="margin-top: 10px">
+                Make available, reliable and quality
+              </p>
+              <p>power at competitive prices and ensure</p>
+              <p>in reduction of power cost of the buyer.</p>
+            </div>
+          </div>
+          <div class="body-footer-content-2" id="body-footer-logo">
+            <img src="/assets/Images/values.png" alt="logo2" />
+            <div class="logo-div-background"></div>
+            <div class="body-footer-contents">
+              <span style="font-weight: 600">Values</span>
+              <p style="margin-top: 10px">
+                To be one of india's largest and best
+              </p>
+              <p>power entity, powering india's growth</p>
+            </div>
+          </div>
+          <div class="body-footer-content-3" id="body-footer-logo">
+            <img src="/assets/Images/collaboration.png" alt="logo3" />
+            <div class="logo-div-background"></div>
+            <div class="body-footer-contents">
+              <span style="font-weight: 600">Ethics</span>
+              <p style="margin-top: 10px">
+                Conducting business activities with
+              </p>
+              <p>integrity is the essence of ethical conduct.</p>
+              <p>To not engage in fraudulent behaviour.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="footer-container">
+        <div class="footer-content">
+          <div class="body-footer-content">
+            <div class="body-footer-content-1" id="body-footer-logo">
+              <div class="body-footer-contents" style="margin-top: 30px">
+                <span style="color: white">MENU</span>
+                <div class="footer-link">
+                  <a href="/home" style="margin-top: 10px">Home</a>
+                  <a href="/aboutus">About Us</a>
+                  <a href="/products">Products</a>
+                  <a href="/market-data">Market Data</a>
+                  <a href="/membership">MemberShip</a>
+                </div>
+              </div>
+            </div>
+            <div class="body-footer-content-1" id="body-footer-logo">
+              <div class="body-footer-contents" style="margin-top: 30px">
+                <span style="color: white; visibility: hidden">MENU</span>
+                <div class="footer-link">
+                  <a href="/related-link" style="margin-top: 10px"
+                    >Related Links</a
+                  >
+                  <a href="/faqs">FAQs</a>
+                  <a href="/career">Career</a>
+                  <a href="/contactus">Contact us</a>
+                </div>
+              </div>
+            </div>
+            <div class="body-footer-content-1" id="body-footer-logo">
+              <div class="body-footer-contents" style="margin-top: 30px">
+                <span style="color: white">CONTACT</span>
+                <div class="footer-link">
+                  <a href="/contact" style="margin-top: 10px"
+                    ><span style="font-weight: normal">Email:</span>
+                    info@sainipower.com</a
+                  >
+                  <a href="/contact"
+                    ><span style="font-weight: normal">Mobile:</span> +91
+                    7696081830</a
+                  >
+                  <a href="/contact"
+                    ><span style="font-weight: normal">Telephone:</span> 0172
+                    2550001</a
+                  >
+                </div>
+              </div>
+            </div>
+            <div class="body-footer-content-1" id="body-footer-logo">
+              <div class="body-footer-contents" style="margin-top: 30px">
+                <span style="color: white">Address</span>
+                <div class="footer-link">
+                  <a href="" style="margin-top: 10px">Saini Power Transactor</a>
+                  <a href="" style="font-weight: 400">S.C.O: 110, 2nd Floor,</a>
+                  <a href="" style="font-weight: 400">Sector 25, Panchkula</a>
+                  <a href="" style="font-weight: 400">Haryana 134109</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div style="margin-top: 30px" class="footer-logo-section">
+            <p style="border-bottom: 1px solid white"></p>
+            <div class="footer-logo">
+              <span>&copy; 2023 Saini Power. All Rights Reserved.</span>
+              <img
+                src="/assets/Images/logo.png"
+                alt="logo"
+                style="width: 100px; height: 50px"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
